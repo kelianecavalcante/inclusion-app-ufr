@@ -14,7 +14,7 @@ import {
                 style={{flex: 1}}
                 initialPage={0}          
                 onPageScroll={(event)=>{
-                    //console.log(`offset = ${event.nativeEvent.offset}`)
+                    console.log(`offset = ${event.nativeEvent.offset}`)
                 }}  
                 onPageScrollStateChanged={(state)=>{
                     console.log(`Scrolling state = ${state}`);
@@ -22,15 +22,19 @@ import {
                 onPageSelected={(event) => {
                     console.log(`Scrolled to page: ${event.nativeEvent.position}`)
                 }}
+                
             >
                 <View style={{backgroundColor:'lightseagreen'}}>
-                    <Text style={styles.textStyle}>Screen 1</Text>
+                    <Text  style={styles.textStyle}>Screen 1</Text>
                 </View>
                 <View style={{backgroundColor:'palevioletred'}}>
                     <Text style={styles.textStyle}>Screen 2</Text>
                 </View>
                 <View style={{backgroundColor:'salmon'}}>
                     <Text style={styles.textStyle}>Screen 3</Text>
+                </View>
+                <View style={{backgroundColor:'pine'}}>
+                    <Text style={styles.textStyle}>Screen 4</Text>
                 </View>
             </ViewPagerAndroid>);        
         }
