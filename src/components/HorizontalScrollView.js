@@ -1,6 +1,7 @@
-import {View, FlatList, StyleSheet} from 'react-native';
+import {View, FlatList, StyleSheet, Button} from 'react-native';
 import React, {Component} from 'react';
 import Tts from 'react-native-tts';
+import Swiper from 'react-native-swiper';
 
 import {
   AppRegistry,
@@ -22,16 +23,17 @@ export default class HorizontalScrollView extends Component {
     };
 
     const cards = [
-      {frase: 'Ouvir música', cor: '#b6f'},
-      {frase: 'Assistir ao jogo', cor: '#f27171'},
-      {frase: 'Passear', cor: '#663399'},
-      {frase: 'Ir ao banheiro', cor: '#f39d3e'},
-      {frase: 'Tomar água', cor: '#44d1ed'},
+      {id: 1, frase: 'Ouvir música',     cor: '#89578B'},
+      {id: 2, frase: 'Assistir ao jogo', cor: '#f27171'},
+      {id: 3, frase: 'Passear',          cor: '#663399'},
+      {id: 4, frase: 'Ir ao banheiro',   cor: '#f39d3e'},
+      {id: 5, frase: 'Tomar água',       cor: '#44d1ed'},
+      {id: 6, frase: 'Dormir',           cor: '#51B563'},
     ];
 
     return (
       <ScrollView
-        horizontal={true}
+        //horizontal={true}
         pagingEnabled={true}
         showsHorizontalScrollIndicator={true}
         scrollIndicatorInsets={{top: 10, left: 10, bottom: 10, right: 10}} //ios
@@ -40,34 +42,32 @@ export default class HorizontalScrollView extends Component {
           console.log(logData);
         }}
         scrollEventThrottle={10}>
-        {cards.map(card => {
+          <Swiper
+          loop
+          >
+          {cards.map(card => {
           return (
-            <TouchableOpacity onPress={() => handleVoice(card.frase)}>
+            <TouchableOpacity onPressIn={() => handleVoice(card.frase)}>
               <View
                 style={{
                   backgroundColor: card.cor,
-                  flex: 1,
                   width: screenWidth,
+                  flex: -1,
+                  width: 680,
+                  height: 410,
                   borderWidth: 8,
                   borderColor: 'white',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
-                <Text style={styles.text}>{card.frase}</Text>
+                <Text style={{fontSize: 40, color: 'white'}}>{card.frase}</Text>
               </View>
             </TouchableOpacity>
+      
           );
-        })}
+        })} 
+        </Swiper>
       </ScrollView>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 35,
-    padding: 15,
-    color: 'white',
-    textAlign: 'center',
-  },
-});
