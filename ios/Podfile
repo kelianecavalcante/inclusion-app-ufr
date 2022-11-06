@@ -19,6 +19,12 @@ target 'Prototipo' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'PrototipoTests' do
     inherit! :complete
     # Pods for testing

@@ -47,14 +47,14 @@ export default class HorizontalScrollView extends Component {
           >
           {cards.map(card => {
           return (
-            <TouchableOpacity onPressIn={() => handleVoice(card.frase)}>
+            <TouchableOpacity key={card.id} onPressIn={() => handleVoice(card.frase)}>
               <View
                 style={{
                   backgroundColor: card.cor,
                   width: screenWidth,
-                  flex: -1,
+                  //flex: -1,
                   width: 680,
-                  height: 410,
+                  height: 350,
                   borderWidth: 8,
                   borderColor: 'white',
                   justifyContent: 'center',
@@ -71,3 +71,14 @@ export default class HorizontalScrollView extends Component {
     );
   }
 }
+
+// const styles = StyleSheet.create({
+
+//   button: {
+//     width: 100,
+//     height: 100,
+//     backgroundColor: 'red',
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//   },
+// });
