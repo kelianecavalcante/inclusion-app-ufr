@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
-    background-color: #141A29;
+    background-color: rgba(255, 255, 255, 0.4);
     flex: 1;
     padding: 4px 0;
 `;
@@ -16,10 +16,9 @@ export const SearchContainer = styled.View`
 `;
 
 export const Input = styled.TextInput`
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #CFCACA;
     width: 85%;
     height: 70px;
-    border-radius: 10px;
     padding: 8px 15px;
     font-size: 18px;
     color: #FFF;
@@ -30,29 +29,5 @@ export const SearchButton = styled.TouchableOpacity`
     height: 50px;
     align-items: center;
     justify-content: center;
+    color: #000;
 `;
-
-
-// export const Title = styled.Text` 
-//     padding-top: 10px;
-//     padding-bottom: 8px;
-//     font-size: 24px;
-//     font-weight: bold;
-//     color: #FFF;
-//     padding-left: 14px;
-//     padding-right: 14px;
-// `;
-
-// export const BannerButton = styled.TouchableOpacity` `;
-
-// export const Banner = styled.Image` 
-//     height: 225px;
-//     border-radius: 6px;
-//     margin: 0 14px;
-// `;
-
-// export const SliderMovie = styled.FlatList`
-//     height: 250px;
-//     padding: 0 14px;
-    
-// `;
