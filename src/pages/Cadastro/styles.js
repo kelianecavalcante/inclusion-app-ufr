@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: '#000';
     flex: 1;
     padding: 4px 0;
 `;
@@ -13,15 +13,6 @@ export const SearchContainer = styled.View`
     align-items: center;
     padding: 58px 15px;
     margin-bottom: 8px;
-`;
-
-export const Input = styled.TextInput`
-    background-color: #CFCACA;
-    width: 85%;
-    height: 70px;
-    padding: 8px 15px;
-    font-size: 18px;
-    color: #FFF;
 `;
 
 export const SearchButton = styled.TouchableOpacity` 

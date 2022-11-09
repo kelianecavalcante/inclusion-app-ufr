@@ -7,7 +7,8 @@ import uuid from 'react-uuid';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import {CardDetails} from './styles';
 
-function HorizontalScrollView() {
+function HorizontalScrollView({frase, cor}) {
+
   let screenWidth = Dimensions.get('window').width;
 
   const handleVoice = frase => {
@@ -16,13 +17,17 @@ function HorizontalScrollView() {
   };
 
   const cards = [
-    {id: uuid(), frase: 'Ouvir música', cor: '#89578B'},
+    {id: uuid(), frase: 'Ouvir música',     cor: '#89578B'},
     {id: uuid(), frase: 'Assistir ao jogo', cor: '#f27171'},
-    {id: uuid(), frase: 'Passear', cor: '#663399'},
-    {id: uuid(), frase: 'Ir ao banheiro', cor: '#f39d3e'},
-    {id: uuid(), frase: 'Tomar água', cor: '#44d1ed'},
-    {id: uuid(), frase: 'Dormir', cor: '#51B563'},
+    {id: uuid(), frase: 'Passear',          cor: '#663399'},
+    {id: uuid(), frase: 'Ir ao banheiro',   cor: '#f39d3e'},
+    {id: uuid(), frase: 'Tomar água',       cor: '#44d1ed'},
+    {id: uuid(), frase: 'Dormir',           cor: '#51B563'},
   ];
+
+if ( frase ) {
+  cards.push( {id: uuid(), frase: frase,     cor: '#5CFFA4'})
+}
 
   return (
     <Swiper loop>
@@ -42,7 +47,7 @@ function HorizontalScrollView() {
                 borderColor: 'white',
                 justifyContent: 'center',
                 alignItems: 'center',
-              }} >
+              }}>
                 <CardDetails>
                   <AntDesign name="arrowleft" size={70} color="#000" />
                   <Text style={{fontSize: 35, color: "#000", fontWeight: 'bold'}}>{card.frase}</Text>
