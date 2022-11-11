@@ -11,13 +11,14 @@ export const SearchContainer = styled.View`
     width: 100%;
     height: 50px;
     align-items: center;
-    padding: 58px 15px;
+    padding: 38px 15px;
     margin-bottom: 8px;
 `;
 
 export const SearchButton = styled.TouchableOpacity` 
     width: 15%;
     height: 50px;
+    margin-top: 15px;
     align-items: center;
     justify-content: center;
     color: #000;
