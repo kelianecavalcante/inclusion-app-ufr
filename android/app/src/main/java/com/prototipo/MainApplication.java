@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.trietho.RNReactNativeABeepPackage;
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 import com.swmansion.reanimated.ReanimatedPackage;
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
@@ -33,6 +34,16 @@ public class MainApplication extends Application implements ReactApplication {
           // packages.add(new MyReactNativePackage());
           return packages;
         }
+
+        public class MainApplication extends Application implements ReactApplication {
+  ...
+  @Override
+  protected List<ReactPackage> getPackages() {
+    return Arrays.<ReactPackage>asList(
+        new MainReactPackage(),
+        new ReactNativeAudioPackage() // <-- New
+    );
+  }
 
         @Override
         protected String getJSMainModuleName() {

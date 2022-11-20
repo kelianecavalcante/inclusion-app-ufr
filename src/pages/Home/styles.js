@@ -16,4 +16,11 @@ export const SearchContainer = styled.View`
     borderColor: '#fff',
     shadowColor: '#fff', 
 `;
+export const BellButton = styled.TouchableOpacity`
+    height: 60px;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 600px;
+    margin-top: -50px;
+`;
 

@@ -25,6 +25,8 @@ target 'Prototipo' do
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  pod 'RNReactNativeABeep', :path => '../node_modules/react-native-a-beep'
+
   target 'PrototipoTests' do
     inherit! :complete
     # Pods for testing
