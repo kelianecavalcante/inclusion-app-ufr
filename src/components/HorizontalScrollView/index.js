@@ -5,7 +5,7 @@ import Swiper from 'react-native-swiper';
 import {Text, TouchableOpacity, Dimensions} from 'react-native';
 import uuid from 'react-uuid';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import {CardDetails} from './styles';
+import {Card, CardDetails} from './styles';
 
 function HorizontalScrollView({frase, cor}) {
   let screenWidth = Dimensions.get('window').width;
@@ -33,29 +33,13 @@ function HorizontalScrollView({frase, cor}) {
   }, [frase, cor]);
 
   return (
-    <Swiper loop>
+    <Swiper>
       {cards.map(card => {
         return (
           <TouchableOpacity
             key={card.id}
             onPressIn={() => handleVoice(card.frase)}>
-            <View
-              style={{
-                backgroundColor: card.cor,
-                width: screenWidth,
-                //flex: -1,
-                width: 650,
-                height: 310,
-                borderWidth: 5,
-                borderRadius: 10,
-                borderColor: 'white',
-                justifyContent: 'center',
-                alignItems: 'center',
-                marginLeft: 15,
-                marginBottom: 20,
-                shadowColor: '#000',
-                elevation: 20,
-              }}>
+            <Card>
               <CardDetails>
                 <AntDesign name="arrowleft" size={70} color="#595760" />
                 <Text style={{fontSize: 35, color: '#000', fontWeight: 'bold'}}>
@@ -63,7 +47,7 @@ function HorizontalScrollView({frase, cor}) {
                 </Text>
                 <AntDesign name="arrowright" size={70} color="#595760" />
               </CardDetails>
-            </View>
+            </Card>
           </TouchableOpacity>
         );
       })}

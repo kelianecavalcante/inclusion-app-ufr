@@ -20,7 +20,7 @@ export const BellButton = styled.TouchableOpacity`
     height: 60px;
     align-items: center;
     flex-direction: row;
-    margin-left: 600px;
+    margin-left: 615px;
     margin-top: -50px;
 `;
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const ViewInformations = styled.View`
-    background-color: #CFCACA;
+    background-color: #A5BEFA;
     width: 95%;
     height: 70%;
     margin-left: 15px;

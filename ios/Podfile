@@ -27,6 +27,8 @@ target 'Prototipo' do
 
   pod 'RNReactNativeABeep', :path => '../node_modules/react-native-a-beep'
 
+  pod 'ReactNativeAudioToolkit', :path => '../node_modules/@react-native-community/audio-toolkit'
+
   target 'PrototipoTests' do
     inherit! :complete
     # Pods for testing

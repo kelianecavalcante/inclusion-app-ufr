@@ -1,14 +1,14 @@
 import React from 'react';
-import {Text, TouchableOpacity, StyleSheet, AsyncStorage} from 'react-native';
+import {Text, TouchableOpacity, StyleSheet} from 'react-native';
 //import AsyncStorage from '@react-native-community/async-storage';
-import {Container, SearchContainer, Input, SearchButton} from './styles';
+import {Container, SearchContainer, SearchButton} from './styles';
 import Header from '../../components/Header';
 import {useState} from 'react';
 import {TextInput} from 'react-native-gesture-handler';
 
 function Cadastro(props) {
   const [frase, setFrase] = useState('');
-  const [cor, setCor] = useState('#77B5A2');
+  const [cor, setCor] = useState('#A5BEFA');
 
   function handleSave() {
     // verificar se o campo está vazio
@@ -36,6 +36,7 @@ function Cadastro(props) {
           style={styles.input}
           onChangeText={setFrase}
           value={frase}
+          color="#000"
           placeholder="Informe frase para novo card"
           onChange={e => setFrase(e.target.value)}
         />
@@ -57,17 +58,18 @@ function Cadastro(props) {
 
 const styles = StyleSheet.create({
   input: {
-    width: 650,
-    height: 80,
-    backgroundColor: '#CFCACA',
+    width: 670,
+    height: 100,
+    backgroundColor: '#A5BEFA',
     padding: 18,
     fontSize: 18,
     borderRadius: 5,
     borderWidth: 2,
     borderColor: '#fff',
     shadowColor: '#fff',
-    elevation: 20,
+    elevation: 5,
     justifyContent: 'center',
+    marginBottom: -35,
   },
 
   button: {
