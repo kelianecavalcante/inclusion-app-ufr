@@ -17,5 +17,11 @@ Ações viáveis de serem realizadas atualmente no protótipo:
 
 
 ## Tecnologias utilizadas
+<div style="display: inline_block"><br>
+  <img align="center" alt="Keli-React" height="40" width="70" src="https://www.datocms-assets.com/45470/1631026680-logo-react-native.png">
+  <img align="center" alt="Keli-Android-Studio" height="60" width="90" src="https://tipscode.com.br/uploads/2020/08/Android-studio2-1.png">
+  <img align="center" alt="Keli-SDC" height="40" width="40" src="https://cdn-images-1.medium.com/max/1200/1*y1fCsOVCYCTi1B9Q_0BOYg.png">
+  <img align="center" alt="Keli-VSCode" height="40" width="40" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png">
+</div>
 
 
