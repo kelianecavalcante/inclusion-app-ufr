@@ -14,6 +14,8 @@ Ações viáveis de serem realizadas atualmente no protótipo:
 </ul>
 
 ## 👩🏻‍💻 Demostração de uso
+- Video de demostração: https://www.youtube.com/watch?v=jMxfW6wFxAg
+- Link do apk gerado: https://drive.google.com/file/d/1hCFNLUnl3tDO94yjZZ6JsxaRN_xMLdmG/view?usp=sharing
 
 
 ## Tecnologias utilizadas
