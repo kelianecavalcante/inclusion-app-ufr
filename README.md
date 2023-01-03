@@ -16,6 +16,7 @@ Ações viáveis de serem realizadas atualmente no protótipo:
 ## 👩🏻‍💻 Demostração de uso
 - Video de demostração: https://www.youtube.com/watch?v=jMxfW6wFxAg
 - Link do apk gerado: https://drive.google.com/file/d/1hCFNLUnl3tDO94yjZZ6JsxaRN_xMLdmG/view?usp=sharing
+- Ilustração inicial: https://www.figma.com/file/d1w0RFXbXeWUgB7s8Vym7X/Prot%C3%B3tipo-TCC?node-id=0%3A1&t=GAnQd9nmHxHBO2xl-0
 
 
 ## Tecnologias utilizadas
